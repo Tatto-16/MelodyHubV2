@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="MelodyHub.Site" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MelodyHub - Instrumentos Musicales</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <asp:ContentPlaceHolder ID="title" runat="server">
+    </asp:ContentPlaceHolder>
+<body>
+    <form id="form1" runat="server">
+        <div class="page-container">
+            <header>
+                <div class="logo">
+                    <h1>MelodyHub</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="inicio.aspx">Inicio</a></li>
+                        <li><a href="Instrumentos.aspx">Instrumentos</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <asp:ContentPlaceHolder ID="main" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+            <footer>
+                <p>&copy; 2024 MelodyHub - Todos los derechos reservados</p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
